@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="loginContainer">
+      <h1>Login</h1>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="loginButton">Login</button>
+      <div id="loginMessage"></div>
+    </div>
+
+    <div class="container" id="weatherContainer" style="display: none">
+      <h1>Weather App</h1>
+
+      <!-- City search input -->
+      <input type="text" id="city" placeholder="Enter city name" />
+
+      <!-- City dropdown for selection -->
+      <select id="cityDropdown">
+        <option value="">Select a City</option>
+        <option value="Vellore">Vellore</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Pune">Pune</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Jaipur">Jaipur</option>
+      </select>
+
+      <button id="getWeather">Get Weather</button>
+      <button id="startVoice">Start Voice Assistant</button>
+      <button id="gpsTracker">GPS Tracker</button>
+      <div id="weatherResult"></div>
+      <div id="locationContainer" style="display: none">
+        <h2>Location: VIT Vellore</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.041079784065!2d79.1559336!3d12.9692232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1731684840174!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Developers</h2>
+      <ul>
+        <li>Nithish Kumar R</li>
+        <li>S Pugazhendhi</li>
+        <li>A Yogesh</li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
